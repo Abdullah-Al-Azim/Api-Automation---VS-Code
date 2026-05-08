@@ -1,0 +1,24 @@
+{
+    "name": "api-automation-testing",
+    "version": "1.0.0",
+    "description": "Complete API Testing Automation Framework",
+    "scripts": {
+        "test": "mocha test/api/**/*.test.js --timeout 10000",
+        "test:report": "mocha test/api/**/*.test.js --timeout 10000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=API_Test_Report,overwrite=true,charts=true",
+        "test:get": "mocha test/api/01_get.test.js --timeout 10000",
+        "test:post": "mocha test/api/02_post.test.js --timeout 10000",
+        "test:headers": "mocha test/api/06_headers.test.js --timeout 10000",
+        "test:params": "mocha test/api/07_params.test.js --timeout 10000",
+        "test:auth": "mocha test/api/08_auth.test.js --timeout 10000",
+        "test:negative": "mocha test/api/10_negative.test.js --timeout 10000",
+        "open:report": "start reports/API_Test_Report.html"
+    },
+    "devDependencies": {
+        "axios": "^1.6.0",
+        "chai": "^4.3.10",
+        "chai-json-schema": "^1.5.1",
+        "dotenv": "^16.3.1",
+        "mocha": "^10.2.0",
+        "mochawesome": "^7.1.3"
+    }
+}

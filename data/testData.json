@@ -1,0 +1,25 @@
+{
+    "validUser": {
+        "name": "Rahim Uddin",
+        "username": "rahim123",
+        "email": "rahim@example.com",
+        "phone": "01712345678",
+        "website": "rahim.com",
+        "address": {
+            "street": "Mirpur Road",
+            "city": "Dhaka",
+            "zipcode": "1216"
+        }
+    },
+    "updateUser": {
+        "name": "Karim Updated",
+        "email": "karim.updated@example.com"
+    },
+    "invalidUser": {
+        "name": "",
+        "email": "invalid-email"
+    },
+    "partialUpdate": {
+        "name": "Only Name Updated"
+    }
+}

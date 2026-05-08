@@ -1,0 +1,10 @@
+timeout: 10000
+recursive: true
+spec: "test/api/**/*.test.js"
+reporter: mochawesome
+reporter-options:
+  reportDir: reports
+  reportFilename: API_Test_Report
+  overwrite: true
+  charts: true
+  timestamp: true
